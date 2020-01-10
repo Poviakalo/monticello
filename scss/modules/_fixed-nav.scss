@@ -1,0 +1,41 @@
+.fixed-nav {
+	position: fixed;
+	top: 50%;
+	right: 25px;
+	transform: translateY(-50%);
+	z-index: 9;
+	mix-blend-mode: difference;
+}
+.fixed-nav a {
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	position: relative;
+	text-decoration: none;
+	margin-bottom: 40px;
+	transition: all .3s;
+	color: #fff;
+	
+}
+
+.fixed-nav a:hover,
+.fixed-nav a.active {
+	color: #fff;
+	background: #fff;
+}
+
+.fixed-nav a span {
+	transition: all .8s;
+	position: absolute;
+	right: 0;
+	top: -10px;
+	opacity: 0;
+}
+
+.fixed-nav a:hover span,
+.fixed-nav a.active span {
+	right: 40px;	
+	opacity: 1;
+}

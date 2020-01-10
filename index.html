@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Examen">
+	<meta name="author" content="Sashko Poviakalo">
+	<title>Examen</title>
+	<link rel="icon" href="images/360.png">
+	<link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<ul class="fixed-nav">
+		<li>
+			<a href="#header" data-menu="header">
+				<span>Home</span>
+			</a>
+		</li>
+		<li>
+			<a href="#about" data-menu="about">
+				<span>About</span>
+			</a>
+		</li>
+		<li>
+			<a href="#news" data-menu="news">
+				<span>News</span>
+			</a>
+		</li>
+		<li>
+			<a href="#gallery" data-menu="gallery">
+				<span>Gallery</span>
+			</a>
+		</li>
+		<li>
+			<a href="#map" data-menu="map">
+				<span>Map</span>
+			</a>
+		</li>
+		<li>
+			<a href="#contact" data-menu="contact">
+				<span>Contact</span>
+			</a>
+		</li>		
+	</ul>
+
+	<header class="header" id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 header__wrap d-flex flex-column justify-content-between">
+					<nav class="navigation row">
+						<a href="#" class="logo col-3">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#logo"></use>
+							</svg>
+						</a>
+						<ul class="menu col-7 d-flex justify-content-around align-items-center">
+							<li class="menu__item">								
+								<a href="#about" class="menu__link"><span class="menu__dot"></span>about us</a>
+							</li>
+							<li class="menu__item">								
+								<a href="#" class="menu__link"><span class="menu__dot"></span>projects</a>
+							</li>
+							<li class="menu__item">								
+								<a href="#news" class="menu__link"><span class="menu__dot"></span>news</a>
+							</li>
+							<li class="menu__item">								
+								<a href="#contact" class="menu__link"><span class="menu__dot"></span>contact</a>
+							</li>
+						</ul>
+						<ul class="social col-2 d-flex justify-content-between align-items-center">
+							<li class="social__item facebook">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#facebook"></use>
+								</svg>
+							</li>
+							<li class="social__item twitter">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#twitter"></use>
+								</svg>
+							</li>
+							<li class="social__item instagram">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#instagram"></use>
+								</svg>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__block row">
+						<div class="col-12">
+							<h1 class="header__title">Simple & mordern</h1>
+							<p class="header__text">We make the world's beautiful every day</p>
+						</div>
+					</div>
+					<a href="#about" class="scroll-down">
+						<div class="scroll-down__btn"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+	</header>
+	<section class="about" id="about">
+		<div class="container">
+			<h1 class="about__title">what we do</h1>
+			<div class="row row-up">
+				<div class="col-7 about__item about__item-1">
+					<img src="images/about-1.jpg" alt="about-1" class="about__img">
+				</div>
+				<div class="col-5 about__info">
+					<h2 class="about__description"><span>One World</span><br> Trade Center</h2>
+					<p class="about__text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+					<a href="#" class="about__btn btn">more details</a>
+					<address class="address about__address">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#marker"></use>
+						</svg>
+						<p>New York City, United States - 1776 feet</p>
+					</address>
+
+				</div>
+			</div>
+			<div class="row row-down">
+				<div class="col-5 about__info">
+					<h2 class="about__description"><span>International</span><br> Commerce Centre</h2>
+					<p class="about__text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+					<a href="#" class="about__btn btn">more details</a>
+					<address class="address about__address">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#marker"></use>
+						</svg>
+						<p>Hong Kong - 1588 Feet</p>
+					</address>
+				</div>
+				<div class="col-7 about__item about__item-2">
+					<img src="images/about-2.jpg" alt="about-2" class="about__img">
+				</div>
+			</div>
+		</div>
+	</section>	
+	<section class="news" id="news">
+		<div class="container">
+			<h1 class="news__title">latest news</h1>
+			<div class="row">
+				<div class="slider col-12" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+					<!-- <div class="row"> -->
+					<!-- <a class="photo" data-fancybox="img-photo" href="images/gallery/5.jpg"></a> -->
+						<a class="col-4 slider__item" data-fancybox="img-photo" href="images/news/1.jpg">
+							<div class="wrap-slider">
+							<!-- <a class="photo" data-fancybox="img-photo" href="images/slides/1.jpg"> -->
+								<img src="images/news/1.jpg" class="slider__img" alt="Image 1">
+							<!-- </a> -->
+								<div class="slider__info">
+									<h2 class="slider__title">See The Unmatched Beauty Of The Great.</h2>
+									<p class="slider__text">Free directories: directories are perfect for customers that are... searching for a </p>
+									<div class="author">
+										<div class="author__portret">
+											<img src="images/news/authors/1.jpg" alt="author 1">
+										</div>										
+										<div class="author__info">
+											<p class="author__name">Isaac Dunn</p>
+											<time datetime="03-04-2015" class="date__time">03.04.2015</time>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</a>
+						<a class="col-4 slider__item" data-fancybox="img-photo" href="images/news/2.jpg">
+							<div class="wrap-slider">
+							<img src="images/news/2.jpg" class="slider__img" alt="Image 2">
+							<div class="slider__info">
+								<h2 class="slider__title">Effective Advertising Pointers.</h2>
+								<p class="slider__text">Having a home based business is a wonderful asset to your life...</p>
+								<div class="author">
+									<div class="author__portret">
+										<img src="images/news/authors/2.jpg" alt="author 2">
+									</div>
+									<div class="author__info">
+										<p class="author__name">Dominic Freeman</p>
+										<time datetime="03-04-2015" class="date__time">03.04.2015</time>
+									</div>
+								</div>
+							</div>
+						</div class="wrap-slider">		
+						</a>
+						<a class="col-4 slider__item" data-fancybox="img-photo" href="images/news/3.jpg">
+							<div class="wrap-slider">
+							<img src="images/news/3.jpg" class="slider__img" alt="Image 3">
+							<div class="slider__info">
+								<h2 class="slider__title">Hypnotize Yourself Into The Ghost.</h2>
+								<p class="slider__text">There are many things that are important to catalog design....</p>
+								<div class="author">
+									<div class="author__portret">
+										<img src="images/news/authors/3.jpg" alt="author 3">
+									</div>
+									<div class="author__info">
+										<p class="author__name">Dominic Freeman</p>
+										<time datetime="03-04-2015" class="date__time">03.04.2015</time>
+									</div>
+								</div>
+							</div>							
+						</div>			
+						</a>
+						<a class="col-4 slider__item" data-fancybox="img-photo" href="images/news/4.jpg">
+							<div class="wrap-slider">
+								<img src="images/news/4.jpg" class="slider__img" alt="Image 4">
+								<div class="slider__info">
+									<h2 class="slider__title">Lorem ipsum dolor sit amet.</h2>
+									<p class="slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi quaerat dolorem quidem. Temporibus mollitia recusandae nam! Consectetur, quae et.</p>
+									<div class="author">
+										<div class="author__portret">
+											<img src="images/news/authors/4.jpg" alt="author 4">
+										</div>
+										<div class="author__info">
+											<p class="author__name">Dominic Freeman</p>
+											<time datetime="03-04-2015" class="date__time">03.04.2015</time>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</a>
+						<a class="col-4 slider__item" data-fancybox="img-photo" href="images/news/5.jpg">
+							<div class="wrap-slider">
+								<img src="images/news/5.jpg" class="slider__img" alt="Image 5">
+								<div class="slider__info">
+									<h2 class="slider__title">Lorem ipsum dolor sit amet.</h2>
+									<p class="slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi quaerat dolorem quidem. Temporibus mollitia recusandae nam! Consectetur, quae et.</p>
+									<div class="author">
+										<div class="author__portret">
+											<img src="images/news/authors/5.jpg" alt="author 5">
+										</div>
+										<div class="author__info">
+											<p class="author__name">Dominic Freeman</p>
+											<time datetime="03-04-2015" class="date__time">03.04.2015</time>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</a>				
+						<a class="col-4 slider__item" data-fancybox="img-photo" href="images/news/6.jpg">
+							<div class="wrap-slider">
+								<img src="images/news/6.jpg" class="slider__img" alt="Image 6">
+								<div class="slider__info">
+									<h2 class="slider__title">Lorem ipsum dolor sit amet.</h2>
+									<p class="slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi quaerat dolorem quidem. Temporibus mollitia recusandae nam! Consectetur, quae et.</p>
+									<div class="author">
+										<div class="author__portret">
+											<img src="images/news/authors/6.jpg" alt="author 6">
+										</div>
+										<div class="author__info">
+											<p class="author__name">Dominic Freeman</p>
+											<time datetime="03-04-2015" class="date__time">03.04.2015</time>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</a>
+						
+						
+					<!-- </div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="gallery" id="gallery">
+		<div class="container">
+			<h1 class="gallery__title">gallery</h1>
+			<div class="row no-gutters gallery__big">
+				<div class="col-6">
+					<a class="photo photo--big" data-fancybox="img-photo" href="images/gallery/1-big.jpg">						
+						<img src="images/gallery/1.jpg" alt="Gallery Item 1">						
+					</a>
+				</div>
+				<div class="col-6">
+					<div class="row no-gutters gallery__small">
+						<div class="col-6">
+							<a class="photo" data-fancybox="img-photo" href="images/gallery/2-big.jpg">								
+								<img src="images/gallery/2.jpg" alt="Gallery Item 2">								
+							</a>
+						</div>
+						<div class="col-6">
+							<a class="photo" data-fancybox="img-photo" href="images/gallery/3-big.jpg">								
+								<img src="images/gallery/3.jpg" alt="Gallery Item 3">								
+							</a>
+						</div>
+					</div>
+					<div class="row no-gutters gallery__small">
+						<div class="col-6">
+							<a class="photo" data-fancybox="img-photo" href="images/gallery/4-big.jpg">								
+								<img src="images/gallery/4.jpg" alt="Gallery Item 4">								
+							</a>
+						</div>
+						<div class="col-6">
+							<a class="photo" data-fancybox="img-photo" href="images/gallery/5-big.jpg">								
+								<img src="images/gallery/5.jpg" alt="Gallery Item 5">								
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="gallery__btn btn">see more</a>
+		</div>
+	</section>
+	<section class="map" id="map"></section>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-8 offset-2">
+					<div class="row form" id="contact">
+						<h1 class="form__title">get in touch</h1>
+						<div class="col-6 form__address">
+							<address class="address form__address--address">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#marker"></use>
+								</svg>
+								<p>91 Nolan Extensions Suite 670</p>
+							</address>
+							<a href="tel: +380500465376" class="form__address--tel">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#phone"></use>
+								</svg>
+								<p>+38 (050) 046-53-76</p>
+							</a>
+							<a href="mailto: poviasha@gmail.com" class="form__address--email">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#address"></use>
+								</svg>
+								<p>poviasha@gmail.com</p>
+							</a>
+							<div class="form__address--clock">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#clock"></use>
+								</svg>
+								<p>From 07:05AM to 19:30PM</p>
+							</div>
+
+						</div>
+						<div class="col-6 form__data">
+							<form action="#">
+								<input type="text" class="form__data--input" placeholder="Name" autofocus>
+								<input type="email" class="form__data--input" placeholder="Email">
+								<button type="submit" class="btn form__data--btn" id="submit">submit</button>
+							</form>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-12 d-flex justify-content-between align-items-center">
+							<a href="#" class="logo">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#logo"></use>
+								</svg>
+							</a>
+		
+							<ul class="social col-3 d-flex justify-content-between align-items-center">
+								<li class="social__item facebook">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#facebook"></use>
+									</svg>
+								</li>
+								<li class="social__item twitter">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#twitter"></use>
+									</svg>
+								</li>
+								<li class="social__item instagram">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#instagram"></use>
+									</svg>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 d-flex">
+							<p class="footer__text">Copyrights © 2017 Monticello Group</p>
+							<span class="footer__span">|</span>
+							<p class="footer__text">Made with <span><svg class="icon heart">
+								<use xlink:href="images/sprite.svg#heart"></use>
+							</svg></span> by Ga Huy</p>
+						</div>
+					</div>
+
+					
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2XrtJWsAYozCtxJngylgBC28znmziXT4&callback=initMap"
+    async defer></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
